@@ -68,7 +68,7 @@ namespace Zoom_API1
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(634, 283);
+            this.button4.Location = new System.Drawing.Point(635, 306);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 3;

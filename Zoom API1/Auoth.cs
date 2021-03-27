@@ -137,6 +137,7 @@ namespace Zoom_API1
 
         private void button4_Click(object sender, EventArgs e)
         {
+            int x;
             this._browser = new WebBrowser();
             this._browser.Dock = DockStyle.Bottom;
             this._browser.Navigated += new WebBrowserNavigatedEventHandler(browser_Navigated);
