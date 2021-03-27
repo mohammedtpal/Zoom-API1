@@ -78,5 +78,26 @@ namespace Zoom_API1
             i.TopMost = true;
             i.Show();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Import_All_Hosts_Details i = new Import_All_Hosts_Details();
+            i.TopMost = true;
+            i.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Host_Meeting_DTL_Report i = new Host_Meeting_DTL_Report();
+            i.TopMost = true;
+            i.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Host_Meeting_Aggregation_Report i = new Host_Meeting_Aggregation_Report();
+            i.TopMost = true;
+            i.Show();
+        }
     }
 }

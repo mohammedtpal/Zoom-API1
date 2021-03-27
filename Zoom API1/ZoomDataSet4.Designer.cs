@@ -20,17 +20,17 @@ namespace Zoom_API1 {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("ZoomDataSet2")]
+    [global::System.Xml.Serialization.XmlRootAttribute("ZoomDataSet4")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class ZoomDataSet2 : global::System.Data.DataSet {
+    public partial class ZoomDataSet4 : global::System.Data.DataSet {
         
-        private HostMeetingsAggregateReportDataTable tableHostMeetingsAggregateReport;
+        private instructorsDataTable tableinstructors;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public ZoomDataSet2() {
+        public ZoomDataSet4() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Zoom_API1 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected ZoomDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected ZoomDataSet4(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Zoom_API1 {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["HostMeetingsAggregateReport"] != null)) {
-                    base.Tables.Add(new HostMeetingsAggregateReportDataTable(ds.Tables["HostMeetingsAggregateReport"]));
+                if ((ds.Tables["instructors"] != null)) {
+                    base.Tables.Add(new instructorsDataTable(ds.Tables["instructors"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Zoom_API1 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public HostMeetingsAggregateReportDataTable HostMeetingsAggregateReport {
+        public instructorsDataTable instructors {
             get {
-                return this.tableHostMeetingsAggregateReport;
+                return this.tableinstructors;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Zoom_API1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            ZoomDataSet2 cln = ((ZoomDataSet2)(base.Clone()));
+            ZoomDataSet4 cln = ((ZoomDataSet4)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Zoom_API1 {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["HostMeetingsAggregateReport"] != null)) {
-                    base.Tables.Add(new HostMeetingsAggregateReportDataTable(ds.Tables["HostMeetingsAggregateReport"]));
+                if ((ds.Tables["instructors"] != null)) {
+                    base.Tables.Add(new instructorsDataTable(ds.Tables["instructors"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Zoom_API1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableHostMeetingsAggregateReport = ((HostMeetingsAggregateReportDataTable)(base.Tables["HostMeetingsAggregateReport"]));
+            this.tableinstructors = ((instructorsDataTable)(base.Tables["instructors"]));
             if ((initTable == true)) {
-                if ((this.tableHostMeetingsAggregateReport != null)) {
-                    this.tableHostMeetingsAggregateReport.InitVars();
+                if ((this.tableinstructors != null)) {
+                    this.tableinstructors.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Zoom_API1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "ZoomDataSet2";
+            this.DataSetName = "ZoomDataSet4";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/ZoomDataSet2.xsd";
+            this.Namespace = "http://tempuri.org/ZoomDataSet4.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableHostMeetingsAggregateReport = new HostMeetingsAggregateReportDataTable();
-            base.Tables.Add(this.tableHostMeetingsAggregateReport);
+            this.tableinstructors = new instructorsDataTable();
+            base.Tables.Add(this.tableinstructors);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeHostMeetingsAggregateReport() {
+        private bool ShouldSerializeinstructors() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Zoom_API1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            ZoomDataSet2 ds = new ZoomDataSet2();
+            ZoomDataSet4 ds = new ZoomDataSet4();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,35 +270,29 @@ namespace Zoom_API1 {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void HostMeetingsAggregateReportRowChangeEventHandler(object sender, HostMeetingsAggregateReportRowChangeEvent e);
+        public delegate void instructorsRowChangeEventHandler(object sender, instructorsRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class HostMeetingsAggregateReportDataTable : global::System.Data.TypedTableBase<HostMeetingsAggregateReportRow> {
+        public partial class instructorsDataTable : global::System.Data.TypedTableBase<instructorsRow> {
             
-            private global::System.Data.DataColumn columntopic;
+            private global::System.Data.DataColumn columnid;
             
-            private global::System.Data.DataColumn columnmeetingID;
+            private global::System.Data.DataColumn columnfirst_name;
             
-            private global::System.Data.DataColumn columnTotalTeacherDuration;
+            private global::System.Data.DataColumn columnlast_name;
             
-            private global::System.Data.DataColumn columnasDurationAVG;
+            private global::System.Data.DataColumn columnemail;
             
-            private global::System.Data.DataColumn columnDurationStandardDeviation;
-            
-            private global::System.Data.DataColumn columncount_OfMeetings;
-            
-            private global::System.Data.DataColumn columnMaxJoinTime;
-            
-            private global::System.Data.DataColumn columnname;
+            private global::System.Data.DataColumn columnstatus;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public HostMeetingsAggregateReportDataTable() {
-                this.TableName = "HostMeetingsAggregateReport";
+            public instructorsDataTable() {
+                this.TableName = "instructors";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -306,7 +300,7 @@ namespace Zoom_API1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal HostMeetingsAggregateReportDataTable(global::System.Data.DataTable table) {
+            internal instructorsDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -323,72 +317,48 @@ namespace Zoom_API1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected HostMeetingsAggregateReportDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected instructorsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn topicColumn {
+            public global::System.Data.DataColumn idColumn {
                 get {
-                    return this.columntopic;
+                    return this.columnid;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn meetingIDColumn {
+            public global::System.Data.DataColumn first_nameColumn {
                 get {
-                    return this.columnmeetingID;
+                    return this.columnfirst_name;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TotalTeacherDurationColumn {
+            public global::System.Data.DataColumn last_nameColumn {
                 get {
-                    return this.columnTotalTeacherDuration;
+                    return this.columnlast_name;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn asDurationAVGColumn {
+            public global::System.Data.DataColumn emailColumn {
                 get {
-                    return this.columnasDurationAVG;
+                    return this.columnemail;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn DurationStandardDeviationColumn {
+            public global::System.Data.DataColumn statusColumn {
                 get {
-                    return this.columnDurationStandardDeviation;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn count_OfMeetingsColumn {
-                get {
-                    return this.columncount_OfMeetings;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn MaxJoinTimeColumn {
-                get {
-                    return this.columnMaxJoinTime;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn nameColumn {
-                get {
-                    return this.columnname;
+                    return this.columnstatus;
                 }
             }
             
@@ -403,52 +373,56 @@ namespace Zoom_API1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public HostMeetingsAggregateReportRow this[int index] {
+            public instructorsRow this[int index] {
                 get {
-                    return ((HostMeetingsAggregateReportRow)(this.Rows[index]));
+                    return ((instructorsRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event HostMeetingsAggregateReportRowChangeEventHandler HostMeetingsAggregateReportRowChanging;
+            public event instructorsRowChangeEventHandler instructorsRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event HostMeetingsAggregateReportRowChangeEventHandler HostMeetingsAggregateReportRowChanged;
+            public event instructorsRowChangeEventHandler instructorsRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event HostMeetingsAggregateReportRowChangeEventHandler HostMeetingsAggregateReportRowDeleting;
+            public event instructorsRowChangeEventHandler instructorsRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event HostMeetingsAggregateReportRowChangeEventHandler HostMeetingsAggregateReportRowDeleted;
+            public event instructorsRowChangeEventHandler instructorsRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddHostMeetingsAggregateReportRow(HostMeetingsAggregateReportRow row) {
+            public void AddinstructorsRow(instructorsRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public HostMeetingsAggregateReportRow AddHostMeetingsAggregateReportRow(string topic, string meetingID, string TotalTeacherDuration, string asDurationAVG, string DurationStandardDeviation, int count_OfMeetings, System.DateTime MaxJoinTime, string name) {
-                HostMeetingsAggregateReportRow rowHostMeetingsAggregateReportRow = ((HostMeetingsAggregateReportRow)(this.NewRow()));
+            public instructorsRow AddinstructorsRow(string id, string first_name, string last_name, string email, string status) {
+                instructorsRow rowinstructorsRow = ((instructorsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        topic,
-                        meetingID,
-                        TotalTeacherDuration,
-                        asDurationAVG,
-                        DurationStandardDeviation,
-                        count_OfMeetings,
-                        MaxJoinTime,
-                        name};
-                rowHostMeetingsAggregateReportRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowHostMeetingsAggregateReportRow);
-                return rowHostMeetingsAggregateReportRow;
+                        id,
+                        first_name,
+                        last_name,
+                        email,
+                        status};
+                rowinstructorsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowinstructorsRow);
+                return rowinstructorsRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public instructorsRow FindByid(string id) {
+                return ((instructorsRow)(this.Rows.Find(new object[] {
+                            id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                HostMeetingsAggregateReportDataTable cln = ((HostMeetingsAggregateReportDataTable)(base.Clone()));
+                instructorsDataTable cln = ((instructorsDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -456,78 +430,68 @@ namespace Zoom_API1 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new HostMeetingsAggregateReportDataTable();
+                return new instructorsDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columntopic = base.Columns["topic"];
-                this.columnmeetingID = base.Columns["meetingID"];
-                this.columnTotalTeacherDuration = base.Columns["TotalTeacherDuration"];
-                this.columnasDurationAVG = base.Columns["asDurationAVG"];
-                this.columnDurationStandardDeviation = base.Columns["DurationStandardDeviation"];
-                this.columncount_OfMeetings = base.Columns["count_OfMeetings"];
-                this.columnMaxJoinTime = base.Columns["MaxJoinTime"];
-                this.columnname = base.Columns["name"];
+                this.columnid = base.Columns["id"];
+                this.columnfirst_name = base.Columns["first_name"];
+                this.columnlast_name = base.Columns["last_name"];
+                this.columnemail = base.Columns["email"];
+                this.columnstatus = base.Columns["status"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columntopic = new global::System.Data.DataColumn("topic", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntopic);
-                this.columnmeetingID = new global::System.Data.DataColumn("meetingID", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmeetingID);
-                this.columnTotalTeacherDuration = new global::System.Data.DataColumn("TotalTeacherDuration", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTotalTeacherDuration);
-                this.columnasDurationAVG = new global::System.Data.DataColumn("asDurationAVG", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnasDurationAVG);
-                this.columnDurationStandardDeviation = new global::System.Data.DataColumn("DurationStandardDeviation", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDurationStandardDeviation);
-                this.columncount_OfMeetings = new global::System.Data.DataColumn("count_OfMeetings", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncount_OfMeetings);
-                this.columnMaxJoinTime = new global::System.Data.DataColumn("MaxJoinTime", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMaxJoinTime);
-                this.columnname = new global::System.Data.DataColumn("name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnname);
-                this.columntopic.MaxLength = 200;
-                this.columnmeetingID.MaxLength = 100;
-                this.columnTotalTeacherDuration.ReadOnly = true;
-                this.columnTotalTeacherDuration.MaxLength = 8;
-                this.columnasDurationAVG.ReadOnly = true;
-                this.columnasDurationAVG.MaxLength = 8;
-                this.columnDurationStandardDeviation.ReadOnly = true;
-                this.columnDurationStandardDeviation.MaxLength = 8;
-                this.columncount_OfMeetings.ReadOnly = true;
-                this.columnMaxJoinTime.ReadOnly = true;
-                this.columnname.MaxLength = 200;
+                this.columnid = new global::System.Data.DataColumn("id", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid);
+                this.columnfirst_name = new global::System.Data.DataColumn("first_name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnfirst_name);
+                this.columnlast_name = new global::System.Data.DataColumn("last_name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnlast_name);
+                this.columnemail = new global::System.Data.DataColumn("email", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnemail);
+                this.columnstatus = new global::System.Data.DataColumn("status", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnstatus);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnid}, true));
+                this.columnid.AllowDBNull = false;
+                this.columnid.Unique = true;
+                this.columnid.MaxLength = 100;
+                this.columnfirst_name.MaxLength = 100;
+                this.columnlast_name.MaxLength = 100;
+                this.columnemail.AllowDBNull = false;
+                this.columnemail.MaxLength = 100;
+                this.columnstatus.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public HostMeetingsAggregateReportRow NewHostMeetingsAggregateReportRow() {
-                return ((HostMeetingsAggregateReportRow)(this.NewRow()));
+            public instructorsRow NewinstructorsRow() {
+                return ((instructorsRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new HostMeetingsAggregateReportRow(builder);
+                return new instructorsRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(HostMeetingsAggregateReportRow);
+                return typeof(instructorsRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.HostMeetingsAggregateReportRowChanged != null)) {
-                    this.HostMeetingsAggregateReportRowChanged(this, new HostMeetingsAggregateReportRowChangeEvent(((HostMeetingsAggregateReportRow)(e.Row)), e.Action));
+                if ((this.instructorsRowChanged != null)) {
+                    this.instructorsRowChanged(this, new instructorsRowChangeEvent(((instructorsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -535,8 +499,8 @@ namespace Zoom_API1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.HostMeetingsAggregateReportRowChanging != null)) {
-                    this.HostMeetingsAggregateReportRowChanging(this, new HostMeetingsAggregateReportRowChangeEvent(((HostMeetingsAggregateReportRow)(e.Row)), e.Action));
+                if ((this.instructorsRowChanging != null)) {
+                    this.instructorsRowChanging(this, new instructorsRowChangeEvent(((instructorsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -544,8 +508,8 @@ namespace Zoom_API1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.HostMeetingsAggregateReportRowDeleted != null)) {
-                    this.HostMeetingsAggregateReportRowDeleted(this, new HostMeetingsAggregateReportRowChangeEvent(((HostMeetingsAggregateReportRow)(e.Row)), e.Action));
+                if ((this.instructorsRowDeleted != null)) {
+                    this.instructorsRowDeleted(this, new instructorsRowChangeEvent(((instructorsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -553,14 +517,14 @@ namespace Zoom_API1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.HostMeetingsAggregateReportRowDeleting != null)) {
-                    this.HostMeetingsAggregateReportRowDeleting(this, new HostMeetingsAggregateReportRowChangeEvent(((HostMeetingsAggregateReportRow)(e.Row)), e.Action));
+                if ((this.instructorsRowDeleting != null)) {
+                    this.instructorsRowDeleting(this, new instructorsRowChangeEvent(((instructorsRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveHostMeetingsAggregateReportRow(HostMeetingsAggregateReportRow row) {
+            public void RemoveinstructorsRow(instructorsRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -569,7 +533,7 @@ namespace Zoom_API1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                ZoomDataSet2 ds = new ZoomDataSet2();
+                ZoomDataSet4 ds = new ZoomDataSet4();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -587,7 +551,7 @@ namespace Zoom_API1 {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "HostMeetingsAggregateReportDataTable";
+                attribute2.FixedValue = "instructorsDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -631,245 +595,121 @@ namespace Zoom_API1 {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class HostMeetingsAggregateReportRow : global::System.Data.DataRow {
+        public partial class instructorsRow : global::System.Data.DataRow {
             
-            private HostMeetingsAggregateReportDataTable tableHostMeetingsAggregateReport;
+            private instructorsDataTable tableinstructors;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal HostMeetingsAggregateReportRow(global::System.Data.DataRowBuilder rb) : 
+            internal instructorsRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableHostMeetingsAggregateReport = ((HostMeetingsAggregateReportDataTable)(this.Table));
+                this.tableinstructors = ((instructorsDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string topic {
+            public string id {
+                get {
+                    return ((string)(this[this.tableinstructors.idColumn]));
+                }
+                set {
+                    this[this.tableinstructors.idColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string first_name {
                 get {
                     try {
-                        return ((string)(this[this.tableHostMeetingsAggregateReport.topicColumn]));
+                        return ((string)(this[this.tableinstructors.first_nameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'topic\' in table \'HostMeetingsAggregateReport\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'first_name\' in table \'instructors\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableHostMeetingsAggregateReport.topicColumn] = value;
+                    this[this.tableinstructors.first_nameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string meetingID {
+            public string last_name {
                 get {
                     try {
-                        return ((string)(this[this.tableHostMeetingsAggregateReport.meetingIDColumn]));
+                        return ((string)(this[this.tableinstructors.last_nameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'meetingID\' in table \'HostMeetingsAggregateReport\' is DBNull" +
-                                ".", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'last_name\' in table \'instructors\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableHostMeetingsAggregateReport.meetingIDColumn] = value;
+                    this[this.tableinstructors.last_nameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string TotalTeacherDuration {
+            public string email {
+                get {
+                    return ((string)(this[this.tableinstructors.emailColumn]));
+                }
+                set {
+                    this[this.tableinstructors.emailColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string status {
                 get {
                     try {
-                        return ((string)(this[this.tableHostMeetingsAggregateReport.TotalTeacherDurationColumn]));
+                        return ((string)(this[this.tableinstructors.statusColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TotalTeacherDuration\' in table \'HostMeetingsAggregateReport" +
-                                "\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'status\' in table \'instructors\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableHostMeetingsAggregateReport.TotalTeacherDurationColumn] = value;
+                    this[this.tableinstructors.statusColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string asDurationAVG {
-                get {
-                    try {
-                        return ((string)(this[this.tableHostMeetingsAggregateReport.asDurationAVGColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'asDurationAVG\' in table \'HostMeetingsAggregateReport\' is DB" +
-                                "Null.", e);
-                    }
-                }
-                set {
-                    this[this.tableHostMeetingsAggregateReport.asDurationAVGColumn] = value;
-                }
+            public bool Isfirst_nameNull() {
+                return this.IsNull(this.tableinstructors.first_nameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string DurationStandardDeviation {
-                get {
-                    try {
-                        return ((string)(this[this.tableHostMeetingsAggregateReport.DurationStandardDeviationColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DurationStandardDeviation\' in table \'HostMeetingsAggregateR" +
-                                "eport\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableHostMeetingsAggregateReport.DurationStandardDeviationColumn] = value;
-                }
+            public void Setfirst_nameNull() {
+                this[this.tableinstructors.first_nameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int count_OfMeetings {
-                get {
-                    try {
-                        return ((int)(this[this.tableHostMeetingsAggregateReport.count_OfMeetingsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'count_OfMeetings\' in table \'HostMeetingsAggregateReport\' is" +
-                                " DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableHostMeetingsAggregateReport.count_OfMeetingsColumn] = value;
-                }
+            public bool Islast_nameNull() {
+                return this.IsNull(this.tableinstructors.last_nameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime MaxJoinTime {
-                get {
-                    try {
-                        return ((global::System.DateTime)(this[this.tableHostMeetingsAggregateReport.MaxJoinTimeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'MaxJoinTime\' in table \'HostMeetingsAggregateReport\' is DBNu" +
-                                "ll.", e);
-                    }
-                }
-                set {
-                    this[this.tableHostMeetingsAggregateReport.MaxJoinTimeColumn] = value;
-                }
+            public void Setlast_nameNull() {
+                this[this.tableinstructors.last_nameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string name {
-                get {
-                    try {
-                        return ((string)(this[this.tableHostMeetingsAggregateReport.nameColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'name\' in table \'HostMeetingsAggregateReport\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableHostMeetingsAggregateReport.nameColumn] = value;
-                }
+            public bool IsstatusNull() {
+                return this.IsNull(this.tableinstructors.statusColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IstopicNull() {
-                return this.IsNull(this.tableHostMeetingsAggregateReport.topicColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SettopicNull() {
-                this[this.tableHostMeetingsAggregateReport.topicColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsmeetingIDNull() {
-                return this.IsNull(this.tableHostMeetingsAggregateReport.meetingIDColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetmeetingIDNull() {
-                this[this.tableHostMeetingsAggregateReport.meetingIDColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsTotalTeacherDurationNull() {
-                return this.IsNull(this.tableHostMeetingsAggregateReport.TotalTeacherDurationColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetTotalTeacherDurationNull() {
-                this[this.tableHostMeetingsAggregateReport.TotalTeacherDurationColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsasDurationAVGNull() {
-                return this.IsNull(this.tableHostMeetingsAggregateReport.asDurationAVGColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetasDurationAVGNull() {
-                this[this.tableHostMeetingsAggregateReport.asDurationAVGColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsDurationStandardDeviationNull() {
-                return this.IsNull(this.tableHostMeetingsAggregateReport.DurationStandardDeviationColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetDurationStandardDeviationNull() {
-                this[this.tableHostMeetingsAggregateReport.DurationStandardDeviationColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Iscount_OfMeetingsNull() {
-                return this.IsNull(this.tableHostMeetingsAggregateReport.count_OfMeetingsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Setcount_OfMeetingsNull() {
-                this[this.tableHostMeetingsAggregateReport.count_OfMeetingsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsMaxJoinTimeNull() {
-                return this.IsNull(this.tableHostMeetingsAggregateReport.MaxJoinTimeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetMaxJoinTimeNull() {
-                this[this.tableHostMeetingsAggregateReport.MaxJoinTimeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsnameNull() {
-                return this.IsNull(this.tableHostMeetingsAggregateReport.nameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetnameNull() {
-                this[this.tableHostMeetingsAggregateReport.nameColumn] = global::System.Convert.DBNull;
+            public void SetstatusNull() {
+                this[this.tableinstructors.statusColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -877,22 +717,22 @@ namespace Zoom_API1 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class HostMeetingsAggregateReportRowChangeEvent : global::System.EventArgs {
+        public class instructorsRowChangeEvent : global::System.EventArgs {
             
-            private HostMeetingsAggregateReportRow eventRow;
+            private instructorsRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public HostMeetingsAggregateReportRowChangeEvent(HostMeetingsAggregateReportRow row, global::System.Data.DataRowAction action) {
+            public instructorsRowChangeEvent(instructorsRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public HostMeetingsAggregateReportRow Row {
+            public instructorsRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -908,7 +748,7 @@ namespace Zoom_API1 {
         }
     }
 }
-namespace Zoom_API1.ZoomDataSet2TableAdapters {
+namespace Zoom_API1.ZoomDataSet4TableAdapters {
     
     
     /// <summary>
@@ -920,7 +760,7 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class HostMeetingsAggregateReportTableAdapter : global::System.ComponentModel.Component {
+    public partial class instructorsTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -934,7 +774,7 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public HostMeetingsAggregateReportTableAdapter() {
+        public instructorsTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1031,16 +871,54 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "HostMeetingsAggregateReport";
-            tableMapping.ColumnMappings.Add("topic", "topic");
-            tableMapping.ColumnMappings.Add("meetingID", "meetingID");
-            tableMapping.ColumnMappings.Add("TotalTeacherDuration", "TotalTeacherDuration");
-            tableMapping.ColumnMappings.Add("asDurationAVG", "asDurationAVG");
-            tableMapping.ColumnMappings.Add("DurationStandardDeviation", "DurationStandardDeviation");
-            tableMapping.ColumnMappings.Add("count_OfMeetings", "count_OfMeetings");
-            tableMapping.ColumnMappings.Add("MaxJoinTime", "MaxJoinTime");
-            tableMapping.ColumnMappings.Add("name", "name");
+            tableMapping.DataSetTable = "instructors";
+            tableMapping.ColumnMappings.Add("id", "id");
+            tableMapping.ColumnMappings.Add("first_name", "first_name");
+            tableMapping.ColumnMappings.Add("last_name", "last_name");
+            tableMapping.ColumnMappings.Add("email", "email");
+            tableMapping.ColumnMappings.Add("status", "status");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[instructors] WHERE (([id] = @Original_id) AND ((@IsNull_first_name = 1 AND [first_name] IS NULL) OR ([first_name] = @Original_first_name)) AND ((@IsNull_last_name = 1 AND [last_name] IS NULL) OR ([last_name] = @Original_last_name)) AND ([email] = @Original_email) AND ((@IsNull_status = 1 AND [status] IS NULL) OR ([status] = @Original_status)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_first_name", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_first_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_last_name", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_last_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_status", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_status", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[instructors] ([id], [first_name], [last_name], [email], [statu" +
+                "s]) VALUES (@id, @first_name, @last_name, @email, @status);\r\nSELECT id, first_na" +
+                "me, last_name, email, status FROM instructors WHERE (id = @id)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@first_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@last_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@status", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[instructors] SET [id] = @id, [first_name] = @first_name, [last_name] = @last_name, [email] = @email, [status] = @status WHERE (([id] = @Original_id) AND ((@IsNull_first_name = 1 AND [first_name] IS NULL) OR ([first_name] = @Original_first_name)) AND ((@IsNull_last_name = 1 AND [last_name] IS NULL) OR ([last_name] = @Original_last_name)) AND ([email] = @Original_email) AND ((@IsNull_status = 1 AND [status] IS NULL) OR ([status] = @Original_status)));
+SELECT id, first_name, last_name, email, status FROM instructors WHERE (id = @id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@first_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@last_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@status", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_first_name", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_first_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_last_name", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_last_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_status", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_status", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1056,43 +934,264 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.HostMeetingsAggregateReport";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fromDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.NVarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@toDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].CommandText = "SELECT id, first_name, last_name, email, status FROM dbo.instructors";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ZoomDataSet2.HostMeetingsAggregateReportDataTable dataTable, global::System.Nullable<global::System.DateTime> fromDate, string email, global::System.Nullable<global::System.DateTime> toDate) {
+        public virtual int Fill(ZoomDataSet4.instructorsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((fromDate.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(fromDate.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            if ((email == null)) {
-                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(email));
-            }
-            if ((toDate.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(toDate.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual ZoomDataSet4.instructorsDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            ZoomDataSet4.instructorsDataTable dataTable = new ZoomDataSet4.instructorsDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(ZoomDataSet4.instructorsDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(ZoomDataSet4 dataSet) {
+            return this.Adapter.Update(dataSet, "instructors");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(string Original_id, string Original_first_name, string Original_last_name, string Original_email, string Original_status) {
+            if ((Original_id == null)) {
+                throw new global::System.ArgumentNullException("Original_id");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_id));
+            }
+            if ((Original_first_name == null)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_first_name));
+            }
+            if ((Original_last_name == null)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_last_name));
+            }
+            if ((Original_email == null)) {
+                throw new global::System.ArgumentNullException("Original_email");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_email));
+            }
+            if ((Original_status == null)) {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_status));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string id, string first_name, string last_name, string email, string status) {
+            if ((id == null)) {
+                throw new global::System.ArgumentNullException("id");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(id));
+            }
+            if ((first_name == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(first_name));
+            }
+            if ((last_name == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(last_name));
+            }
+            if ((email == null)) {
+                throw new global::System.ArgumentNullException("email");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(email));
+            }
+            if ((status == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(status));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string id, string first_name, string last_name, string email, string status, string Original_id, string Original_first_name, string Original_last_name, string Original_email, string Original_status) {
+            if ((id == null)) {
+                throw new global::System.ArgumentNullException("id");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(id));
+            }
+            if ((first_name == null)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(first_name));
+            }
+            if ((last_name == null)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(last_name));
+            }
+            if ((email == null)) {
+                throw new global::System.ArgumentNullException("email");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(email));
+            }
+            if ((status == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(status));
+            }
+            if ((Original_id == null)) {
+                throw new global::System.ArgumentNullException("Original_id");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_id));
+            }
+            if ((Original_first_name == null)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_first_name));
+            }
+            if ((Original_last_name == null)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_last_name));
+            }
+            if ((Original_email == null)) {
+                throw new global::System.ArgumentNullException("Original_email");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_email));
+            }
+            if ((Original_status == null)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_status));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string first_name, string last_name, string email, string status, string Original_id, string Original_first_name, string Original_last_name, string Original_email, string Original_status) {
+            return this.Update(Original_id, first_name, last_name, email, status, Original_id, Original_first_name, Original_last_name, Original_email, Original_status);
         }
     }
     
@@ -1108,6 +1207,8 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
+        private instructorsTableAdapter _instructorsTableAdapter;
+        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -1120,6 +1221,20 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
             }
             set {
                 this._updateOrder = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public instructorsTableAdapter instructorsTableAdapter {
+            get {
+                return this._instructorsTableAdapter;
+            }
+            set {
+                this._instructorsTableAdapter = value;
             }
         }
         
@@ -1142,6 +1257,10 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
+                if (((this._instructorsTableAdapter != null) 
+                            && (this._instructorsTableAdapter.Connection != null))) {
+                    return this._instructorsTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -1155,6 +1274,9 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
+                if ((this._instructorsTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -1164,8 +1286,17 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(ZoomDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(ZoomDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._instructorsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.instructors.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._instructorsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -1174,8 +1305,16 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(ZoomDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(ZoomDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._instructorsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.instructors.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._instructorsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -1184,8 +1323,16 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(ZoomDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(ZoomDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._instructorsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.instructors.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._instructorsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             return result;
         }
         
@@ -1218,12 +1365,17 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(ZoomDataSet2 dataSet) {
+        public virtual int UpdateAll(ZoomDataSet4 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
+            }
+            if (((this._instructorsTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._instructorsTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1257,6 +1409,15 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
+                if ((this._instructorsTableAdapter != null)) {
+                    revertConnections.Add(this._instructorsTableAdapter, this._instructorsTableAdapter.Connection);
+                    this._instructorsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._instructorsTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._instructorsTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._instructorsTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._instructorsTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1314,6 +1475,10 @@ namespace Zoom_API1.ZoomDataSet2TableAdapters {
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
+                }
+                if ((this._instructorsTableAdapter != null)) {
+                    this._instructorsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._instructorsTableAdapter]));
+                    this._instructorsTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

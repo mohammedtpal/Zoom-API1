@@ -13,18 +13,18 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>D:\zoom api updates\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateEnabled>false</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <UpdateUrl>http://localhost/Zoom API1/</UpdateUrl>
-    <ApplicationRevision>1</ApplicationRevision>
+    <UpdateUrl>https://drive.google.com/drive/u/0/folders/19FgCLluDwvqBiJfswMDdQdY_CQdDbiCk/</UpdateUrl>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -279,6 +279,32 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GET_HOSTS_FROM_DB_DATASET.cs">
+      <DependentUpon>GET_HOSTS_FROM_DB_DATASET.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GET_HOSTS_FROM_DB_DATASET.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GET_HOSTS_FROM_DB_DATASET.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Host Meeting Aggregation Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Host Meeting Aggregation Report.Designer.cs">
+      <DependentUpon>Host Meeting Aggregation Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Host Meeting DTL Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Host Meeting DTL Report.Designer.cs">
+      <DependentUpon>Host Meeting DTL Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Import All Hosts Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import All Hosts Details.Designer.cs">
+      <DependentUpon>Import All Hosts Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Import Host Meeting Details.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -322,18 +348,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ZoomDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ZoomDataSet2.cs">
-      <DependentUpon>ZoomDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ZoomDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ZoomDataSet2.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ZoomDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ZoomDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZoomDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZoomDataSet4.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Auoth.resx">
       <DependentUpon>Auoth.cs</DependentUpon>
@@ -343,6 +366,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host Meeting Aggregation Report.resx">
+      <DependentUpon>Host Meeting Aggregation Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host Meeting DTL Report.resx">
+      <DependentUpon>Host Meeting DTL Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import All Hosts Details.resx">
+      <DependentUpon>Import All Hosts Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Import Host Meeting Details.resx">
       <DependentUpon>Import Host Meeting Details.cs</DependentUpon>
@@ -377,6 +409,17 @@
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
+    <None Include="GET_HOSTS_FROM_DB_DATASET.xsc">
+      <DependentUpon>GET_HOSTS_FROM_DB_DATASET.xsd</DependentUpon>
+    </None>
+    <None Include="GET_HOSTS_FROM_DB_DATASET.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GET_HOSTS_FROM_DB_DATASET.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GET_HOSTS_FROM_DB_DATASET.xss">
+      <DependentUpon>GET_HOSTS_FROM_DB_DATASET.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -410,17 +453,6 @@
     <None Include="ZoomDataSet1.xss">
       <DependentUpon>ZoomDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="ZoomDataSet2.xsc">
-      <DependentUpon>ZoomDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="ZoomDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ZoomDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ZoomDataSet2.xss">
-      <DependentUpon>ZoomDataSet2.xsd</DependentUpon>
-    </None>
     <None Include="ZoomDataSet3.xsc">
       <DependentUpon>ZoomDataSet3.xsd</DependentUpon>
     </None>
@@ -431,6 +463,17 @@
     </None>
     <None Include="ZoomDataSet3.xss">
       <DependentUpon>ZoomDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ZoomDataSet4.xsc">
+      <DependentUpon>ZoomDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ZoomDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZoomDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZoomDataSet4.xss">
+      <DependentUpon>ZoomDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

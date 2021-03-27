@@ -94,9 +94,10 @@ namespace Zoom_API1
             this.button9.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.button9.Size = new System.Drawing.Size(186, 32);
             this.button9.TabIndex = 2;
-            this.button9.Text = "Import Meeting Details for all";
+            this.button9.Text = "Import All hosts Meeting Details";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -195,6 +196,7 @@ namespace Zoom_API1
             this.button6.Text = "Host Aggregation Report";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -210,6 +212,7 @@ namespace Zoom_API1
             this.button7.Text = "Host Meeting Details";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 

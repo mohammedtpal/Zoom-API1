@@ -27,5 +27,17 @@ namespace Zoom_API1
             HostListBox2.Items.AddRange(api.GetLogList());
             Application.DoEvents();
         }
+
+        private void Import_Host_Meeting_Details_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'gET_HOSTS_FROM_DB_DATASET.instructors' table. You can move, or remove it, as needed.
+            this.instructorsTableAdapter.Fill(this.gET_HOSTS_FROM_DB_DATASET.instructors);
+            // TODO: This line of code loads data into the 'gET_HOSTS_FROM_DB_DATASET.instructors' table. You can move, or remove it, as needed.
+            // this.instructorsTableAdapter1.Fill(this.gET_HOSTS_FROM_DB_DATASET.instructors);
+            // TODO: This line of code loads data into the 'zoomDataSet4.instructors' table. You can move, or remove it, as needed.
+            // this.instructorsTableAdapter.Fill(this.zoomDataSet4.instructors);
+            comboBox1.AutoCompleteCustomSource = api.GetInstructorData();
+
+        }
     }
 }

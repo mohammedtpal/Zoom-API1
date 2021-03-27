@@ -296,17 +296,23 @@ namespace Zoom_API1
 
                         }
                         else if (numericStatusCode == 404)
-                            // MessageBox.Show("لا يوجد معلومات عن المحاضرة" + "\n" + response.Content);
+                        {
+ // MessageBox.Show("لا يوجد معلومات عن المحاضرة" + "\n" + response.Content);
                             Console.WriteLine("لا يوجد معلومات عن المحاضرة" + "\n" + response.Content);
+                            logList.Items.Add("لا يوجد معلومات عن المحاضرة " + response.Content);
+                        }
+                           
                         else if (numericStatusCode == 401)
                         {
                             MessageBox.Show(response.Content, "Token ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            logList.Items.Add("Token ERROR " + response.Content);
                             return 0;
 
                         }
                         else
                         {
                             MessageBox.Show(response.Content, "General ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            logList.Items.Add("General ERROR " + response.Content);
                             return 1;
                         }
                         i++;

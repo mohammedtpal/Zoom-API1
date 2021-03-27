@@ -513,7 +513,7 @@ namespace Zoom_API1
             {
                 //this.hostMeetingsAggregateReportTableAdapter.Fill()
                 // this.meetingesTableAdapter.Fill(this.zoomDataSet.meetinges, comboBox1.SelectedValue.ToString());
-                this.hostMeetingsAggregateReportTableAdapter.Fill(this.zoomDataSet2.HostMeetingsAggregateReport, FromTimePicker1.Value,comboBox2.SelectedValue.ToString(), TodateTimePicker1.Value);
+                //this.hostMeetingsAggregateReportTableAdapter.Fill(this.zoomDataSet2.HostMeetingsAggregateReport, FromTimePicker1.Value,comboBox2.SelectedValue.ToString(), TodateTimePicker1.Value);
                 this.hostMeetingsDtlReportTableAdapter.Fill(this.zoomDataSet3.HostMeetingsDtlReport,comboBox2.SelectedValue.ToString(), FromTimePicker1.Value,  TodateTimePicker1.Value);
             }
             catch (System.Exception ex)
@@ -583,6 +583,31 @@ namespace Zoom_API1
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void user_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar_users_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar_user_meetinges_Click(object sender, EventArgs e)
         {
 
         }
