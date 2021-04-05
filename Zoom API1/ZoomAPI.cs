@@ -115,6 +115,7 @@ namespace Zoom_API1
                         Save_Meetinges();//save
                         data = JObject.Parse(json);
                         next_page_token = Convert.ToString(data.SelectToken("next_page_token"));
+                        System.Threading.Thread.Sleep(100);
 
                     }
 
@@ -155,6 +156,7 @@ namespace Zoom_API1
 
                 con.Open();
                 int rowAffected = cmd.ExecuteNonQuery();
+                logList.Items.Add( " Saved");
                 con.Close();
             }
             catch (System.Data.SqlClient.SqlException ex)

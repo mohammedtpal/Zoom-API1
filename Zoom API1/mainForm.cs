@@ -99,5 +99,12 @@ namespace Zoom_API1
             i.TopMost = true;
             i.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Pau_user_percent i = new Pau_user_percent();
+            i.TopMost = true;
+            i.Show();
+        }
     }
 }

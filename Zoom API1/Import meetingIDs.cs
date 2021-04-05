@@ -22,11 +22,26 @@ namespace Zoom_API1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Import_meetingsListBox.Items.Clear();
+            try
+            {
+
+  Import_meetingsListBox.Items.Clear();
             progressBar1.Value = 0;
             api.ImportMeetingesIDs(FromdateTimePicker1.Value, TodateTimePicker2.Value, progressBar1);
             Import_meetingsListBox.Items.AddRange(api.GetLogList());
             Application.DoEvents();
+
+            }
+            catch (System.Data.SqlClient.SqlException ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
 
         }
 

@@ -28,6 +28,8 @@ namespace Zoom_API1 {
         
         private HostMeetingsAggregateReportDataTable tableHostMeetingsAggregateReport;
         
+        private PAU_Final_Percent_ReportDataTable tablePAU_Final_Percent_Report;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -61,6 +63,9 @@ namespace Zoom_API1 {
                 }
                 if ((ds.Tables["HostMeetingsAggregateReport"] != null)) {
                     base.Tables.Add(new HostMeetingsAggregateReportDataTable(ds.Tables["HostMeetingsAggregateReport"]));
+                }
+                if ((ds.Tables["PAU_Final_Percent_Report"] != null)) {
+                    base.Tables.Add(new PAU_Final_Percent_ReportDataTable(ds.Tables["PAU_Final_Percent_Report"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -97,6 +102,16 @@ namespace Zoom_API1 {
         public HostMeetingsAggregateReportDataTable HostMeetingsAggregateReport {
             get {
                 return this.tableHostMeetingsAggregateReport;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public PAU_Final_Percent_ReportDataTable PAU_Final_Percent_Report {
+            get {
+                return this.tablePAU_Final_Percent_Report;
             }
         }
         
@@ -173,6 +188,9 @@ namespace Zoom_API1 {
                 if ((ds.Tables["HostMeetingsAggregateReport"] != null)) {
                     base.Tables.Add(new HostMeetingsAggregateReportDataTable(ds.Tables["HostMeetingsAggregateReport"]));
                 }
+                if ((ds.Tables["PAU_Final_Percent_Report"] != null)) {
+                    base.Tables.Add(new PAU_Final_Percent_ReportDataTable(ds.Tables["PAU_Final_Percent_Report"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -218,6 +236,12 @@ namespace Zoom_API1 {
                     this.tableHostMeetingsAggregateReport.InitVars();
                 }
             }
+            this.tablePAU_Final_Percent_Report = ((PAU_Final_Percent_ReportDataTable)(base.Tables["PAU_Final_Percent_Report"]));
+            if ((initTable == true)) {
+                if ((this.tablePAU_Final_Percent_Report != null)) {
+                    this.tablePAU_Final_Percent_Report.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -232,6 +256,8 @@ namespace Zoom_API1 {
             base.Tables.Add(this.tableinstructors);
             this.tableHostMeetingsAggregateReport = new HostMeetingsAggregateReportDataTable();
             base.Tables.Add(this.tableHostMeetingsAggregateReport);
+            this.tablePAU_Final_Percent_Report = new PAU_Final_Percent_ReportDataTable();
+            base.Tables.Add(this.tablePAU_Final_Percent_Report);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -243,6 +269,12 @@ namespace Zoom_API1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializeHostMeetingsAggregateReport() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializePAU_Final_Percent_Report() {
             return false;
         }
         
@@ -306,6 +338,9 @@ namespace Zoom_API1 {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void HostMeetingsAggregateReportRowChangeEventHandler(object sender, HostMeetingsAggregateReportRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void PAU_Final_Percent_ReportRowChangeEventHandler(object sender, PAU_Final_Percent_ReportRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -656,6 +691,10 @@ namespace Zoom_API1 {
             
             private global::System.Data.DataColumn columnMaxJoinTime;
             
+            private global::System.Data.DataColumn columnCrsName;
+            
+            private global::System.Data.DataColumn columnCrsNo;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public HostMeetingsAggregateReportDataTable() {
@@ -779,6 +818,22 @@ namespace Zoom_API1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CrsNameColumn {
+                get {
+                    return this.columnCrsName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CrsNoColumn {
+                get {
+                    return this.columnCrsNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -814,7 +869,7 @@ namespace Zoom_API1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public HostMeetingsAggregateReportRow AddHostMeetingsAggregateReportRow(string name, string topic, string meetingID, int sumT_DurationInMinutes, string sumTDurationInTimeFormat, string AVGDurationInTimeFormat, decimal DurationAVGinMinutes, double standardDeviationinMinutes, string DurationStandardDeviationInTimeFormat, int count_OfMeetings, System.DateTime MaxJoinTime) {
+            public HostMeetingsAggregateReportRow AddHostMeetingsAggregateReportRow(string name, string topic, string meetingID, int sumT_DurationInMinutes, string sumTDurationInTimeFormat, string AVGDurationInTimeFormat, decimal DurationAVGinMinutes, double standardDeviationinMinutes, string DurationStandardDeviationInTimeFormat, int count_OfMeetings, System.DateTime MaxJoinTime, string CrsName, string CrsNo) {
                 HostMeetingsAggregateReportRow rowHostMeetingsAggregateReportRow = ((HostMeetingsAggregateReportRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         name,
@@ -827,7 +882,9 @@ namespace Zoom_API1 {
                         standardDeviationinMinutes,
                         DurationStandardDeviationInTimeFormat,
                         count_OfMeetings,
-                        MaxJoinTime};
+                        MaxJoinTime,
+                        CrsName,
+                        CrsNo};
                 rowHostMeetingsAggregateReportRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowHostMeetingsAggregateReportRow);
                 return rowHostMeetingsAggregateReportRow;
@@ -861,6 +918,8 @@ namespace Zoom_API1 {
                 this.columnDurationStandardDeviationInTimeFormat = base.Columns["DurationStandardDeviationInTimeFormat"];
                 this.columncount_OfMeetings = base.Columns["count_OfMeetings"];
                 this.columnMaxJoinTime = base.Columns["MaxJoinTime"];
+                this.columnCrsName = base.Columns["CrsName"];
+                this.columnCrsNo = base.Columns["CrsNo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -888,6 +947,10 @@ namespace Zoom_API1 {
                 base.Columns.Add(this.columncount_OfMeetings);
                 this.columnMaxJoinTime = new global::System.Data.DataColumn("MaxJoinTime", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMaxJoinTime);
+                this.columnCrsName = new global::System.Data.DataColumn("CrsName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCrsName);
+                this.columnCrsNo = new global::System.Data.DataColumn("CrsNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCrsNo);
                 this.columnname.MaxLength = 200;
                 this.columntopic.MaxLength = 200;
                 this.columnmeetingID.MaxLength = 100;
@@ -902,6 +965,10 @@ namespace Zoom_API1 {
                 this.columnDurationStandardDeviationInTimeFormat.MaxLength = 8;
                 this.columncount_OfMeetings.ReadOnly = true;
                 this.columnMaxJoinTime.ReadOnly = true;
+                this.columnCrsName.ReadOnly = true;
+                this.columnCrsName.MaxLength = 100;
+                this.columnCrsNo.ReadOnly = true;
+                this.columnCrsNo.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -988,6 +1055,390 @@ namespace Zoom_API1 {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "HostMeetingsAggregateReportDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class PAU_Final_Percent_ReportDataTable : global::System.Data.TypedTableBase<PAU_Final_Percent_ReportRow> {
+            
+            private global::System.Data.DataColumn columnname;
+            
+            private global::System.Data.DataColumn columnCrsName;
+            
+            private global::System.Data.DataColumn columnclassNo;
+            
+            private global::System.Data.DataColumn columnPERCENTAGE;
+            
+            private global::System.Data.DataColumn columnsumT_DurationInMinutes;
+            
+            private global::System.Data.DataColumn columnmeetingID;
+            
+            private global::System.Data.DataColumn columntopic;
+            
+            private global::System.Data.DataColumn columnemail;
+            
+            private global::System.Data.DataColumn columncologNo;
+            
+            private global::System.Data.DataColumn columnDeptNo;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public PAU_Final_Percent_ReportDataTable() {
+                this.TableName = "PAU_Final_Percent_Report";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal PAU_Final_Percent_ReportDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected PAU_Final_Percent_ReportDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn nameColumn {
+                get {
+                    return this.columnname;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CrsNameColumn {
+                get {
+                    return this.columnCrsName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn classNoColumn {
+                get {
+                    return this.columnclassNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PERCENTAGEColumn {
+                get {
+                    return this.columnPERCENTAGE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn sumT_DurationInMinutesColumn {
+                get {
+                    return this.columnsumT_DurationInMinutes;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn meetingIDColumn {
+                get {
+                    return this.columnmeetingID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn topicColumn {
+                get {
+                    return this.columntopic;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn emailColumn {
+                get {
+                    return this.columnemail;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn cologNoColumn {
+                get {
+                    return this.columncologNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DeptNoColumn {
+                get {
+                    return this.columnDeptNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public PAU_Final_Percent_ReportRow this[int index] {
+                get {
+                    return ((PAU_Final_Percent_ReportRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event PAU_Final_Percent_ReportRowChangeEventHandler PAU_Final_Percent_ReportRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event PAU_Final_Percent_ReportRowChangeEventHandler PAU_Final_Percent_ReportRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event PAU_Final_Percent_ReportRowChangeEventHandler PAU_Final_Percent_ReportRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event PAU_Final_Percent_ReportRowChangeEventHandler PAU_Final_Percent_ReportRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddPAU_Final_Percent_ReportRow(PAU_Final_Percent_ReportRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public PAU_Final_Percent_ReportRow AddPAU_Final_Percent_ReportRow(string name, string CrsName, string classNo, decimal PERCENTAGE, int sumT_DurationInMinutes, string meetingID, string topic, string email, string cologNo, string DeptNo) {
+                PAU_Final_Percent_ReportRow rowPAU_Final_Percent_ReportRow = ((PAU_Final_Percent_ReportRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        name,
+                        CrsName,
+                        classNo,
+                        PERCENTAGE,
+                        sumT_DurationInMinutes,
+                        meetingID,
+                        topic,
+                        email,
+                        cologNo,
+                        DeptNo};
+                rowPAU_Final_Percent_ReportRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowPAU_Final_Percent_ReportRow);
+                return rowPAU_Final_Percent_ReportRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                PAU_Final_Percent_ReportDataTable cln = ((PAU_Final_Percent_ReportDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new PAU_Final_Percent_ReportDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnname = base.Columns["name"];
+                this.columnCrsName = base.Columns["CrsName"];
+                this.columnclassNo = base.Columns["classNo"];
+                this.columnPERCENTAGE = base.Columns["PERCENTAGE"];
+                this.columnsumT_DurationInMinutes = base.Columns["sumT_DurationInMinutes"];
+                this.columnmeetingID = base.Columns["meetingID"];
+                this.columntopic = base.Columns["topic"];
+                this.columnemail = base.Columns["email"];
+                this.columncologNo = base.Columns["cologNo"];
+                this.columnDeptNo = base.Columns["DeptNo"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnname = new global::System.Data.DataColumn("name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnname);
+                this.columnCrsName = new global::System.Data.DataColumn("CrsName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCrsName);
+                this.columnclassNo = new global::System.Data.DataColumn("classNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnclassNo);
+                this.columnPERCENTAGE = new global::System.Data.DataColumn("PERCENTAGE", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPERCENTAGE);
+                this.columnsumT_DurationInMinutes = new global::System.Data.DataColumn("sumT_DurationInMinutes", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnsumT_DurationInMinutes);
+                this.columnmeetingID = new global::System.Data.DataColumn("meetingID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmeetingID);
+                this.columntopic = new global::System.Data.DataColumn("topic", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntopic);
+                this.columnemail = new global::System.Data.DataColumn("email", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnemail);
+                this.columncologNo = new global::System.Data.DataColumn("cologNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncologNo);
+                this.columnDeptNo = new global::System.Data.DataColumn("DeptNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDeptNo);
+                this.columnname.MaxLength = 200;
+                this.columnCrsName.MaxLength = 100;
+                this.columnclassNo.MaxLength = 10;
+                this.columnPERCENTAGE.ReadOnly = true;
+                this.columnsumT_DurationInMinutes.ReadOnly = true;
+                this.columnmeetingID.MaxLength = 100;
+                this.columntopic.MaxLength = 200;
+                this.columnemail.AllowDBNull = false;
+                this.columnemail.MaxLength = 100;
+                this.columncologNo.MaxLength = 100;
+                this.columnDeptNo.MaxLength = 100;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public PAU_Final_Percent_ReportRow NewPAU_Final_Percent_ReportRow() {
+                return ((PAU_Final_Percent_ReportRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new PAU_Final_Percent_ReportRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(PAU_Final_Percent_ReportRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.PAU_Final_Percent_ReportRowChanged != null)) {
+                    this.PAU_Final_Percent_ReportRowChanged(this, new PAU_Final_Percent_ReportRowChangeEvent(((PAU_Final_Percent_ReportRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.PAU_Final_Percent_ReportRowChanging != null)) {
+                    this.PAU_Final_Percent_ReportRowChanging(this, new PAU_Final_Percent_ReportRowChangeEvent(((PAU_Final_Percent_ReportRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.PAU_Final_Percent_ReportRowDeleted != null)) {
+                    this.PAU_Final_Percent_ReportRowDeleted(this, new PAU_Final_Percent_ReportRowChangeEvent(((PAU_Final_Percent_ReportRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.PAU_Final_Percent_ReportRowDeleting != null)) {
+                    this.PAU_Final_Percent_ReportRowDeleting(this, new PAU_Final_Percent_ReportRowChangeEvent(((PAU_Final_Percent_ReportRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemovePAU_Final_Percent_ReportRow(PAU_Final_Percent_ReportRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                GET_HOSTS_FROM_DB_DATASET ds = new GET_HOSTS_FROM_DB_DATASET();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "PAU_Final_Percent_ReportDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1350,6 +1801,38 @@ namespace Zoom_API1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CrsName {
+                get {
+                    try {
+                        return ((string)(this[this.tableHostMeetingsAggregateReport.CrsNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CrsName\' in table \'HostMeetingsAggregateReport\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHostMeetingsAggregateReport.CrsNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CrsNo {
+                get {
+                    try {
+                        return ((string)(this[this.tableHostMeetingsAggregateReport.CrsNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CrsNo\' in table \'HostMeetingsAggregateReport\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHostMeetingsAggregateReport.CrsNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsnameNull() {
                 return this.IsNull(this.tableHostMeetingsAggregateReport.nameColumn);
             }
@@ -1479,6 +1962,309 @@ namespace Zoom_API1 {
             public void SetMaxJoinTimeNull() {
                 this[this.tableHostMeetingsAggregateReport.MaxJoinTimeColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCrsNameNull() {
+                return this.IsNull(this.tableHostMeetingsAggregateReport.CrsNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCrsNameNull() {
+                this[this.tableHostMeetingsAggregateReport.CrsNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCrsNoNull() {
+                return this.IsNull(this.tableHostMeetingsAggregateReport.CrsNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCrsNoNull() {
+                this[this.tableHostMeetingsAggregateReport.CrsNoColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class PAU_Final_Percent_ReportRow : global::System.Data.DataRow {
+            
+            private PAU_Final_Percent_ReportDataTable tablePAU_Final_Percent_Report;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal PAU_Final_Percent_ReportRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablePAU_Final_Percent_Report = ((PAU_Final_Percent_ReportDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string name {
+                get {
+                    try {
+                        return ((string)(this[this.tablePAU_Final_Percent_Report.nameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'name\' in table \'PAU_Final_Percent_Report\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePAU_Final_Percent_Report.nameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CrsName {
+                get {
+                    try {
+                        return ((string)(this[this.tablePAU_Final_Percent_Report.CrsNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CrsName\' in table \'PAU_Final_Percent_Report\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePAU_Final_Percent_Report.CrsNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string classNo {
+                get {
+                    try {
+                        return ((string)(this[this.tablePAU_Final_Percent_Report.classNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'classNo\' in table \'PAU_Final_Percent_Report\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePAU_Final_Percent_Report.classNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal PERCENTAGE {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablePAU_Final_Percent_Report.PERCENTAGEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PERCENTAGE\' in table \'PAU_Final_Percent_Report\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePAU_Final_Percent_Report.PERCENTAGEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int sumT_DurationInMinutes {
+                get {
+                    try {
+                        return ((int)(this[this.tablePAU_Final_Percent_Report.sumT_DurationInMinutesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'sumT_DurationInMinutes\' in table \'PAU_Final_Percent_Report\'" +
+                                " is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePAU_Final_Percent_Report.sumT_DurationInMinutesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string meetingID {
+                get {
+                    try {
+                        return ((string)(this[this.tablePAU_Final_Percent_Report.meetingIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'meetingID\' in table \'PAU_Final_Percent_Report\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePAU_Final_Percent_Report.meetingIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string topic {
+                get {
+                    try {
+                        return ((string)(this[this.tablePAU_Final_Percent_Report.topicColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'topic\' in table \'PAU_Final_Percent_Report\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePAU_Final_Percent_Report.topicColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string email {
+                get {
+                    return ((string)(this[this.tablePAU_Final_Percent_Report.emailColumn]));
+                }
+                set {
+                    this[this.tablePAU_Final_Percent_Report.emailColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string cologNo {
+                get {
+                    try {
+                        return ((string)(this[this.tablePAU_Final_Percent_Report.cologNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'cologNo\' in table \'PAU_Final_Percent_Report\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePAU_Final_Percent_Report.cologNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string DeptNo {
+                get {
+                    try {
+                        return ((string)(this[this.tablePAU_Final_Percent_Report.DeptNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DeptNo\' in table \'PAU_Final_Percent_Report\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePAU_Final_Percent_Report.DeptNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsnameNull() {
+                return this.IsNull(this.tablePAU_Final_Percent_Report.nameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetnameNull() {
+                this[this.tablePAU_Final_Percent_Report.nameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCrsNameNull() {
+                return this.IsNull(this.tablePAU_Final_Percent_Report.CrsNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCrsNameNull() {
+                this[this.tablePAU_Final_Percent_Report.CrsNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsclassNoNull() {
+                return this.IsNull(this.tablePAU_Final_Percent_Report.classNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetclassNoNull() {
+                this[this.tablePAU_Final_Percent_Report.classNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPERCENTAGENull() {
+                return this.IsNull(this.tablePAU_Final_Percent_Report.PERCENTAGEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPERCENTAGENull() {
+                this[this.tablePAU_Final_Percent_Report.PERCENTAGEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IssumT_DurationInMinutesNull() {
+                return this.IsNull(this.tablePAU_Final_Percent_Report.sumT_DurationInMinutesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetsumT_DurationInMinutesNull() {
+                this[this.tablePAU_Final_Percent_Report.sumT_DurationInMinutesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsmeetingIDNull() {
+                return this.IsNull(this.tablePAU_Final_Percent_Report.meetingIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetmeetingIDNull() {
+                this[this.tablePAU_Final_Percent_Report.meetingIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IstopicNull() {
+                return this.IsNull(this.tablePAU_Final_Percent_Report.topicColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SettopicNull() {
+                this[this.tablePAU_Final_Percent_Report.topicColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IscologNoNull() {
+                return this.IsNull(this.tablePAU_Final_Percent_Report.cologNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetcologNoNull() {
+                this[this.tablePAU_Final_Percent_Report.cologNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDeptNoNull() {
+                return this.IsNull(this.tablePAU_Final_Percent_Report.DeptNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDeptNoNull() {
+                this[this.tablePAU_Final_Percent_Report.DeptNoColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -1535,6 +2321,40 @@ namespace Zoom_API1 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public HostMeetingsAggregateReportRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class PAU_Final_Percent_ReportRowChangeEvent : global::System.EventArgs {
+            
+            private PAU_Final_Percent_ReportRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public PAU_Final_Percent_ReportRowChangeEvent(PAU_Final_Percent_ReportRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public PAU_Final_Percent_ReportRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -2099,6 +2919,8 @@ SELECT id, first_name + ' ' + last_name AS NAME, email, type, status FROM instru
             tableMapping.ColumnMappings.Add("DurationStandardDeviationInTimeFormat", "DurationStandardDeviationInTimeFormat");
             tableMapping.ColumnMappings.Add("count_OfMeetings", "count_OfMeetings");
             tableMapping.ColumnMappings.Add("MaxJoinTime", "MaxJoinTime");
+            tableMapping.ColumnMappings.Add("CrsName", "CrsName");
+            tableMapping.ColumnMappings.Add("CrsNo", "CrsNo");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -2179,6 +3001,235 @@ SELECT id, first_name + ' ' + last_name AS NAME, email, type, status FROM instru
                 this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             GET_HOSTS_FROM_DB_DATASET.HostMeetingsAggregateReportDataTable dataTable = new GET_HOSTS_FROM_DB_DATASET.HostMeetingsAggregateReportDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class PAU_Final_Percent_ReportTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public PAU_Final_Percent_ReportTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "PAU_Final_Percent_Report";
+            tableMapping.ColumnMappings.Add("name", "name");
+            tableMapping.ColumnMappings.Add("CrsName", "CrsName");
+            tableMapping.ColumnMappings.Add("classNo", "classNo");
+            tableMapping.ColumnMappings.Add("PERCENTAGE", "PERCENTAGE");
+            tableMapping.ColumnMappings.Add("sumT_DurationInMinutes", "sumT_DurationInMinutes");
+            tableMapping.ColumnMappings.Add("meetingID", "meetingID");
+            tableMapping.ColumnMappings.Add("topic", "topic");
+            tableMapping.ColumnMappings.Add("email", "email");
+            tableMapping.ColumnMappings.Add("cologNo", "cologNo");
+            tableMapping.ColumnMappings.Add("DeptNo", "DeptNo");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Zoom_API1.Properties.Settings.Default.ZoomConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.PAU_Final_Percent_Report";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StartDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EndDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PERCENTAGE", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.NVarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(GET_HOSTS_FROM_DB_DATASET.PAU_Final_Percent_ReportDataTable dataTable, global::System.Nullable<global::System.DateTime> StartDate, global::System.Nullable<global::System.DateTime> EndDate, global::System.Nullable<double> PERCENTAGE, string email) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((StartDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(StartDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((EndDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(EndDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((PERCENTAGE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((double)(PERCENTAGE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((email == null)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((string)(email));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual GET_HOSTS_FROM_DB_DATASET.PAU_Final_Percent_ReportDataTable GetData(global::System.Nullable<global::System.DateTime> StartDate, global::System.Nullable<global::System.DateTime> EndDate, global::System.Nullable<double> PERCENTAGE, string email) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((StartDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(StartDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((EndDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(EndDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((PERCENTAGE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((double)(PERCENTAGE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((email == null)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((string)(email));
+            }
+            GET_HOSTS_FROM_DB_DATASET.PAU_Final_Percent_ReportDataTable dataTable = new GET_HOSTS_FROM_DB_DATASET.PAU_Final_Percent_ReportDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
