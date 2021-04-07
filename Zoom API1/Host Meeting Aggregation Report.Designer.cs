@@ -40,6 +40,7 @@ namespace Zoom_API1
             this.gET_HOSTS_FROM_DB_DATASET = new Zoom_API1.GET_HOSTS_FROM_DB_DATASET();
             this.TodateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.hostMeetingsAggregateReportDataGridView = new System.Windows.Forms.DataGridView();
             this.hostMeetingsAggregateReportBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -61,9 +62,9 @@ namespace Zoom_API1
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.hostMeetingsAggregateReportTableAdapter = new Zoom_API1.GET_HOSTS_FROM_DB_DATASETTableAdapters.HostMeetingsAggregateReportTableAdapter();
-            this.hostMeetingsAggregateReportDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,25 +74,24 @@ namespace Zoom_API1
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.instructorsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gET_HOSTS_FROM_DB_DATASET)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hostMeetingsAggregateReportDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hostMeetingsAggregateReportBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AggregationBindingNavigator)).BeginInit();
             this.AggregationBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hostMeetingsAggregateReportDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(9, 32);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(7, 26);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(231, 33);
+            this.button2.Size = new System.Drawing.Size(173, 27);
             this.button2.TabIndex = 10;
             this.button2.Text = "Show Meeting Details";
             this.button2.UseVisualStyleBackColor = true;
@@ -101,28 +101,30 @@ namespace Zoom_API1
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(936, 37);
+            this.label6.Location = new System.Drawing.Point(702, 30);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 18);
+            this.label6.Size = new System.Drawing.Size(23, 15);
             this.label6.TabIndex = 15;
             this.label6.Text = "To";
             // 
             // FromTimePicker1
             // 
             this.FromTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FromTimePicker1.Location = new System.Drawing.Point(640, 32);
-            this.FromTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FromTimePicker1.Location = new System.Drawing.Point(480, 26);
+            this.FromTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.FromTimePicker1.Name = "FromTimePicker1";
-            this.FromTimePicker1.Size = new System.Drawing.Size(200, 24);
+            this.FromTimePicker1.Size = new System.Drawing.Size(151, 21);
             this.FromTimePicker1.TabIndex = 12;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(579, 37);
+            this.label7.Location = new System.Drawing.Point(434, 30);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 18);
+            this.label7.Size = new System.Drawing.Size(40, 15);
             this.label7.TabIndex = 14;
             this.label7.Text = "From";
             // 
@@ -134,10 +136,10 @@ namespace Zoom_API1
             this.comboBox2.DisplayMember = "NAME";
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(301, 32);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox2.Location = new System.Drawing.Point(226, 26);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(248, 33);
+            this.comboBox2.Size = new System.Drawing.Size(187, 28);
             this.comboBox2.TabIndex = 9;
             this.comboBox2.ValueMember = "email";
             // 
@@ -154,10 +156,10 @@ namespace Zoom_API1
             // TodateTimePicker1
             // 
             this.TodateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TodateTimePicker1.Location = new System.Drawing.Point(977, 32);
-            this.TodateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TodateTimePicker1.Location = new System.Drawing.Point(733, 26);
+            this.TodateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TodateTimePicker1.Name = "TodateTimePicker1";
-            this.TodateTimePicker1.Size = new System.Drawing.Size(200, 24);
+            this.TodateTimePicker1.Size = new System.Drawing.Size(151, 21);
             this.TodateTimePicker1.TabIndex = 13;
             // 
             // panel2
@@ -166,11 +168,38 @@ namespace Zoom_API1
             this.panel2.Controls.Add(this.hostMeetingsAggregateReportDataGridView);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 123);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(0, 100);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1199, 437);
+            this.panel2.Size = new System.Drawing.Size(899, 355);
             this.panel2.TabIndex = 19;
+            // 
+            // hostMeetingsAggregateReportDataGridView
+            // 
+            this.hostMeetingsAggregateReportDataGridView.AutoGenerateColumns = false;
+            this.hostMeetingsAggregateReportDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.hostMeetingsAggregateReportDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn2});
+            this.hostMeetingsAggregateReportDataGridView.DataSource = this.hostMeetingsAggregateReportBindingSource;
+            this.hostMeetingsAggregateReportDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hostMeetingsAggregateReportDataGridView.Location = new System.Drawing.Point(0, 33);
+            this.hostMeetingsAggregateReportDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hostMeetingsAggregateReportDataGridView.Name = "hostMeetingsAggregateReportDataGridView";
+            this.hostMeetingsAggregateReportDataGridView.RowHeadersWidth = 51;
+            this.hostMeetingsAggregateReportDataGridView.RowTemplate.Height = 24;
+            this.hostMeetingsAggregateReportDataGridView.Size = new System.Drawing.Size(895, 318);
+            this.hostMeetingsAggregateReportDataGridView.TabIndex = 1;
             // 
             // hostMeetingsAggregateReportBindingSource
             // 
@@ -181,9 +210,8 @@ namespace Zoom_API1
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1195, 41);
+            this.panel3.Size = new System.Drawing.Size(895, 33);
             this.panel3.TabIndex = 0;
             // 
             // panel1
@@ -196,9 +224,8 @@ namespace Zoom_API1
             this.panel1.Controls.Add(this.TodateTimePicker1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1199, 123);
+            this.panel1.Size = new System.Drawing.Size(899, 100);
             this.panel1.TabIndex = 18;
             // 
             // instructorsTableAdapter
@@ -233,14 +260,14 @@ namespace Zoom_API1
             this.instructorsBindingNavigatorSaveItem,
             this.toolStripProgressBar1,
             this.toolStripSeparator1});
-            this.AggregationBindingNavigator.Location = new System.Drawing.Point(0, 123);
+            this.AggregationBindingNavigator.Location = new System.Drawing.Point(0, 100);
             this.AggregationBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.AggregationBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.AggregationBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.AggregationBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.AggregationBindingNavigator.Name = "AggregationBindingNavigator";
             this.AggregationBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.AggregationBindingNavigator.Size = new System.Drawing.Size(1199, 27);
+            this.AggregationBindingNavigator.Size = new System.Drawing.Size(899, 27);
             this.AggregationBindingNavigator.TabIndex = 20;
             this.AggregationBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -251,13 +278,13 @@ namespace Zoom_API1
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -268,7 +295,7 @@ namespace Zoom_API1
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -277,7 +304,7 @@ namespace Zoom_API1
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -286,7 +313,7 @@ namespace Zoom_API1
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
@@ -300,7 +327,7 @@ namespace Zoom_API1
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -315,7 +342,7 @@ namespace Zoom_API1
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -324,7 +351,7 @@ namespace Zoom_API1
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
@@ -338,14 +365,14 @@ namespace Zoom_API1
             this.instructorsBindingNavigatorSaveItem.Enabled = false;
             this.instructorsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("instructorsBindingNavigatorSaveItem.Image")));
             this.instructorsBindingNavigatorSaveItem.Name = "instructorsBindingNavigatorSaveItem";
-            this.instructorsBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.instructorsBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.instructorsBindingNavigatorSaveItem.Text = "Save Data";
             this.instructorsBindingNavigatorSaveItem.Click += new System.EventHandler(this.instructorsBindingNavigatorSaveItem_Click);
             // 
             // toolStripProgressBar1
             // 
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 24);
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(75, 24);
             this.toolStripProgressBar1.Click += new System.EventHandler(this.toolStripProgressBar1_Click);
             // 
             // toolStripSeparator1
@@ -357,33 +384,6 @@ namespace Zoom_API1
             // 
             this.hostMeetingsAggregateReportTableAdapter.ClearBeforeFill = true;
             // 
-            // hostMeetingsAggregateReportDataGridView
-            // 
-            this.hostMeetingsAggregateReportDataGridView.AutoGenerateColumns = false;
-            this.hostMeetingsAggregateReportDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.hostMeetingsAggregateReportDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13});
-            this.hostMeetingsAggregateReportDataGridView.DataSource = this.hostMeetingsAggregateReportBindingSource;
-            this.hostMeetingsAggregateReportDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hostMeetingsAggregateReportDataGridView.Location = new System.Drawing.Point(0, 41);
-            this.hostMeetingsAggregateReportDataGridView.Name = "hostMeetingsAggregateReportDataGridView";
-            this.hostMeetingsAggregateReportDataGridView.RowHeadersWidth = 51;
-            this.hostMeetingsAggregateReportDataGridView.RowTemplate.Height = 24;
-            this.hostMeetingsAggregateReportDataGridView.Size = new System.Drawing.Size(1195, 392);
-            this.hostMeetingsAggregateReportDataGridView.TabIndex = 1;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "name";
@@ -392,13 +392,23 @@ namespace Zoom_API1
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.Width = 125;
             // 
-            // dataGridViewTextBoxColumn2
+            // dataGridViewTextBoxColumn12
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "topic";
-            this.dataGridViewTextBoxColumn2.HeaderText = "topic";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "CrsName";
+            this.dataGridViewTextBoxColumn12.HeaderText = "CrsName";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "CrsNo";
+            this.dataGridViewTextBoxColumn13.HeaderText = "CrsNo";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            this.dataGridViewTextBoxColumn13.Width = 125;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -480,46 +490,35 @@ namespace Zoom_API1
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
             this.dataGridViewTextBoxColumn11.Width = 125;
             // 
-            // dataGridViewTextBoxColumn12
+            // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "CrsName";
-            this.dataGridViewTextBoxColumn12.HeaderText = "CrsName";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            this.dataGridViewTextBoxColumn12.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "CrsNo";
-            this.dataGridViewTextBoxColumn13.HeaderText = "CrsNo";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            this.dataGridViewTextBoxColumn13.Width = 125;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "topic";
+            this.dataGridViewTextBoxColumn2.HeaderText = "topic";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
             // 
             // Host_Meeting_Aggregation_Report
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1199, 560);
+            this.ClientSize = new System.Drawing.Size(899, 455);
             this.Controls.Add(this.AggregationBindingNavigator);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Host_Meeting_Aggregation_Report";
             this.Text = "Host_Meeting_Aggregation_Report";
             this.Load += new System.EventHandler(this.Host_Meeting_Aggregation_Report_Load);
             ((System.ComponentModel.ISupportInitialize)(this.instructorsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gET_HOSTS_FROM_DB_DATASET)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hostMeetingsAggregateReportDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hostMeetingsAggregateReportBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AggregationBindingNavigator)).EndInit();
             this.AggregationBindingNavigator.ResumeLayout(false);
             this.AggregationBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hostMeetingsAggregateReportDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -558,7 +557,8 @@ namespace Zoom_API1
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.DataGridView hostMeetingsAggregateReportDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
@@ -568,7 +568,6 @@ namespace Zoom_API1
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }
 }

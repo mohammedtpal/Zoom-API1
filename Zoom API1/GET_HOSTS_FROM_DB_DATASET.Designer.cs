@@ -1122,6 +1122,8 @@ namespace Zoom_API1 {
             
             private global::System.Data.DataColumn columnDeptNo;
             
+            private global::System.Data.DataColumn columnCrsHour;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public PAU_Final_Percent_ReportDataTable() {
@@ -1237,6 +1239,14 @@ namespace Zoom_API1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CrsHourColumn {
+                get {
+                    return this.columnCrsHour;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1272,7 +1282,7 @@ namespace Zoom_API1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PAU_Final_Percent_ReportRow AddPAU_Final_Percent_ReportRow(string name, string CrsName, string classNo, decimal PERCENTAGE, int sumT_DurationInMinutes, string meetingID, string topic, string email, string cologNo, string DeptNo) {
+            public PAU_Final_Percent_ReportRow AddPAU_Final_Percent_ReportRow(string name, string CrsName, string classNo, decimal PERCENTAGE, int sumT_DurationInMinutes, string meetingID, string topic, string email, string cologNo, string DeptNo, int CrsHour) {
                 PAU_Final_Percent_ReportRow rowPAU_Final_Percent_ReportRow = ((PAU_Final_Percent_ReportRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         name,
@@ -1284,7 +1294,8 @@ namespace Zoom_API1 {
                         topic,
                         email,
                         cologNo,
-                        DeptNo};
+                        DeptNo,
+                        CrsHour};
                 rowPAU_Final_Percent_ReportRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPAU_Final_Percent_ReportRow);
                 return rowPAU_Final_Percent_ReportRow;
@@ -1317,6 +1328,7 @@ namespace Zoom_API1 {
                 this.columnemail = base.Columns["email"];
                 this.columncologNo = base.Columns["cologNo"];
                 this.columnDeptNo = base.Columns["DeptNo"];
+                this.columnCrsHour = base.Columns["CrsHour"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1342,6 +1354,8 @@ namespace Zoom_API1 {
                 base.Columns.Add(this.columncologNo);
                 this.columnDeptNo = new global::System.Data.DataColumn("DeptNo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDeptNo);
+                this.columnCrsHour = new global::System.Data.DataColumn("CrsHour", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCrsHour);
                 this.columnname.MaxLength = 200;
                 this.columnCrsName.MaxLength = 100;
                 this.columnclassNo.MaxLength = 10;
@@ -1349,7 +1363,6 @@ namespace Zoom_API1 {
                 this.columnsumT_DurationInMinutes.ReadOnly = true;
                 this.columnmeetingID.MaxLength = 100;
                 this.columntopic.MaxLength = 200;
-                this.columnemail.AllowDBNull = false;
                 this.columnemail.MaxLength = 100;
                 this.columncologNo.MaxLength = 100;
                 this.columnDeptNo.MaxLength = 100;
@@ -2119,7 +2132,12 @@ namespace Zoom_API1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string email {
                 get {
-                    return ((string)(this[this.tablePAU_Final_Percent_Report.emailColumn]));
+                    try {
+                        return ((string)(this[this.tablePAU_Final_Percent_Report.emailColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'email\' in table \'PAU_Final_Percent_Report\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tablePAU_Final_Percent_Report.emailColumn] = value;
@@ -2155,6 +2173,22 @@ namespace Zoom_API1 {
                 }
                 set {
                     this[this.tablePAU_Final_Percent_Report.DeptNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int CrsHour {
+                get {
+                    try {
+                        return ((int)(this[this.tablePAU_Final_Percent_Report.CrsHourColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CrsHour\' in table \'PAU_Final_Percent_Report\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePAU_Final_Percent_Report.CrsHourColumn] = value;
                 }
             }
             
@@ -2244,6 +2278,18 @@ namespace Zoom_API1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsemailNull() {
+                return this.IsNull(this.tablePAU_Final_Percent_Report.emailColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetemailNull() {
+                this[this.tablePAU_Final_Percent_Report.emailColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IscologNoNull() {
                 return this.IsNull(this.tablePAU_Final_Percent_Report.cologNoColumn);
             }
@@ -2264,6 +2310,18 @@ namespace Zoom_API1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetDeptNoNull() {
                 this[this.tablePAU_Final_Percent_Report.DeptNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCrsHourNull() {
+                return this.IsNull(this.tablePAU_Final_Percent_Report.CrsHourColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCrsHourNull() {
+                this[this.tablePAU_Final_Percent_Report.CrsHourColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -3137,6 +3195,7 @@ SELECT id, first_name + ' ' + last_name AS NAME, email, type, status FROM instru
             tableMapping.ColumnMappings.Add("email", "email");
             tableMapping.ColumnMappings.Add("cologNo", "cologNo");
             tableMapping.ColumnMappings.Add("DeptNo", "DeptNo");
+            tableMapping.ColumnMappings.Add("CrsHour", "CrsHour");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -3156,8 +3215,8 @@ SELECT id, first_name + ' ' + last_name AS NAME, email, type, status FROM instru
             this._commandCollection[0].CommandText = "dbo.PAU_Final_Percent_Report";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StartDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EndDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StartDate", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EndDate", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PERCENTAGE", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.NVarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }

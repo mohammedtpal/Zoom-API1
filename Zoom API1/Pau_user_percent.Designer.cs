@@ -60,16 +60,17 @@ namespace Zoom_API1
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.pAU_Final_Percent_ReportBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.pAU_Final_Percent_ReportDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.crsNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.crsHourDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sumTDurationInMinutesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pERCENTAGEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.meetingIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.topicDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cologNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deptNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.instructorsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gET_HOSTS_FROM_DB_DATASET)).BeginInit();
@@ -90,25 +91,27 @@ namespace Zoom_API1
             this.panel1.Controls.Add(this.TodateTimePicker1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1343, 100);
+            this.panel1.Size = new System.Drawing.Size(1044, 81);
             this.panel1.TabIndex = 0;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1203, 30);
+            this.textBox1.Location = new System.Drawing.Point(902, 24);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 22;
             this.textBox1.Text = "0.84";
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(10, 29);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(8, 24);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(231, 33);
+            this.button2.Size = new System.Drawing.Size(173, 27);
             this.button2.TabIndex = 17;
             this.button2.Text = "Show Meeting Details";
             this.button2.UseVisualStyleBackColor = true;
@@ -118,9 +121,10 @@ namespace Zoom_API1
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(937, 34);
+            this.label6.Location = new System.Drawing.Point(703, 28);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 18);
+            this.label6.Size = new System.Drawing.Size(23, 15);
             this.label6.TabIndex = 21;
             this.label6.Text = "To";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -128,10 +132,10 @@ namespace Zoom_API1
             // FromTimePicker1
             // 
             this.FromTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FromTimePicker1.Location = new System.Drawing.Point(641, 29);
-            this.FromTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FromTimePicker1.Location = new System.Drawing.Point(481, 24);
+            this.FromTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.FromTimePicker1.Name = "FromTimePicker1";
-            this.FromTimePicker1.Size = new System.Drawing.Size(200, 24);
+            this.FromTimePicker1.Size = new System.Drawing.Size(151, 21);
             this.FromTimePicker1.TabIndex = 18;
             this.FromTimePicker1.ValueChanged += new System.EventHandler(this.FromTimePicker1_ValueChanged);
             // 
@@ -139,9 +143,10 @@ namespace Zoom_API1
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(580, 34);
+            this.label7.Location = new System.Drawing.Point(435, 28);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 18);
+            this.label7.Size = new System.Drawing.Size(40, 15);
             this.label7.TabIndex = 20;
             this.label7.Text = "From";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -154,10 +159,10 @@ namespace Zoom_API1
             this.comboBox2.DisplayMember = "NAME";
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(302, 29);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox2.Location = new System.Drawing.Point(226, 24);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(248, 33);
+            this.comboBox2.Size = new System.Drawing.Size(187, 28);
             this.comboBox2.TabIndex = 16;
             this.comboBox2.ValueMember = "email";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
@@ -175,19 +180,20 @@ namespace Zoom_API1
             // TodateTimePicker1
             // 
             this.TodateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TodateTimePicker1.Location = new System.Drawing.Point(978, 29);
-            this.TodateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TodateTimePicker1.Location = new System.Drawing.Point(734, 24);
+            this.TodateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TodateTimePicker1.Name = "TodateTimePicker1";
-            this.TodateTimePicker1.Size = new System.Drawing.Size(200, 24);
+            this.TodateTimePicker1.Size = new System.Drawing.Size(151, 21);
             this.TodateTimePicker1.TabIndex = 19;
             this.TodateTimePicker1.ValueChanged += new System.EventHandler(this.TodateTimePicker1_ValueChanged);
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 100);
+            this.panel2.Location = new System.Drawing.Point(0, 81);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1343, 34);
+            this.panel2.Size = new System.Drawing.Size(1044, 28);
             this.panel2.TabIndex = 1;
             // 
             // pAU_Final_Percent_ReportBindingSource
@@ -229,14 +235,14 @@ namespace Zoom_API1
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.pAU_Final_Percent_ReportBindingNavigatorSaveItem});
-            this.pAU_Final_Percent_ReportBindingNavigator.Location = new System.Drawing.Point(0, 134);
+            this.pAU_Final_Percent_ReportBindingNavigator.Location = new System.Drawing.Point(0, 109);
             this.pAU_Final_Percent_ReportBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.pAU_Final_Percent_ReportBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.pAU_Final_Percent_ReportBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.pAU_Final_Percent_ReportBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.pAU_Final_Percent_ReportBindingNavigator.Name = "pAU_Final_Percent_ReportBindingNavigator";
             this.pAU_Final_Percent_ReportBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.pAU_Final_Percent_ReportBindingNavigator.Size = new System.Drawing.Size(1343, 27);
+            this.pAU_Final_Percent_ReportBindingNavigator.Size = new System.Drawing.Size(1044, 27);
             this.pAU_Final_Percent_ReportBindingNavigator.TabIndex = 2;
             this.pAU_Final_Percent_ReportBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -246,13 +252,13 @@ namespace Zoom_API1
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -262,7 +268,7 @@ namespace Zoom_API1
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -271,7 +277,7 @@ namespace Zoom_API1
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -280,7 +286,7 @@ namespace Zoom_API1
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
@@ -294,7 +300,7 @@ namespace Zoom_API1
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -309,7 +315,7 @@ namespace Zoom_API1
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -318,7 +324,7 @@ namespace Zoom_API1
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
@@ -332,7 +338,7 @@ namespace Zoom_API1
             this.pAU_Final_Percent_ReportBindingNavigatorSaveItem.Enabled = false;
             this.pAU_Final_Percent_ReportBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("pAU_Final_Percent_ReportBindingNavigatorSaveItem.Image")));
             this.pAU_Final_Percent_ReportBindingNavigatorSaveItem.Name = "pAU_Final_Percent_ReportBindingNavigatorSaveItem";
-            this.pAU_Final_Percent_ReportBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.pAU_Final_Percent_ReportBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.pAU_Final_Percent_ReportBindingNavigatorSaveItem.Text = "Save Data";
             // 
             // pAU_Final_Percent_ReportDataGridView
@@ -340,116 +346,105 @@ namespace Zoom_API1
             this.pAU_Final_Percent_ReportDataGridView.AutoGenerateColumns = false;
             this.pAU_Final_Percent_ReportDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.pAU_Final_Percent_ReportDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
+            this.nameDataGridViewTextBoxColumn,
+            this.crsNameDataGridViewTextBoxColumn,
+            this.classNoDataGridViewTextBoxColumn,
+            this.crsHourDataGridViewTextBoxColumn,
+            this.sumTDurationInMinutesDataGridViewTextBoxColumn,
+            this.pERCENTAGEDataGridViewTextBoxColumn,
+            this.meetingIDDataGridViewTextBoxColumn,
+            this.topicDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.cologNoDataGridViewTextBoxColumn,
+            this.deptNoDataGridViewTextBoxColumn});
             this.pAU_Final_Percent_ReportDataGridView.DataSource = this.pAU_Final_Percent_ReportBindingSource;
             this.pAU_Final_Percent_ReportDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pAU_Final_Percent_ReportDataGridView.Location = new System.Drawing.Point(0, 161);
+            this.pAU_Final_Percent_ReportDataGridView.Location = new System.Drawing.Point(0, 136);
+            this.pAU_Final_Percent_ReportDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pAU_Final_Percent_ReportDataGridView.Name = "pAU_Final_Percent_ReportDataGridView";
             this.pAU_Final_Percent_ReportDataGridView.RowHeadersWidth = 51;
             this.pAU_Final_Percent_ReportDataGridView.RowTemplate.Height = 24;
-            this.pAU_Final_Percent_ReportDataGridView.Size = new System.Drawing.Size(1343, 289);
+            this.pAU_Final_Percent_ReportDataGridView.Size = new System.Drawing.Size(1044, 230);
             this.pAU_Final_Percent_ReportDataGridView.TabIndex = 4;
             // 
-            // dataGridViewTextBoxColumn1
+            // nameDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "name";
-            this.dataGridViewTextBoxColumn1.HeaderText = "name";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn2
+            // crsNameDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "CrsName";
-            this.dataGridViewTextBoxColumn2.HeaderText = "CrsName";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
+            this.crsNameDataGridViewTextBoxColumn.DataPropertyName = "CrsName";
+            this.crsNameDataGridViewTextBoxColumn.HeaderText = "CrsName";
+            this.crsNameDataGridViewTextBoxColumn.Name = "crsNameDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn3
+            // classNoDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "classNo";
-            this.dataGridViewTextBoxColumn3.HeaderText = "classNo";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
+            this.classNoDataGridViewTextBoxColumn.DataPropertyName = "classNo";
+            this.classNoDataGridViewTextBoxColumn.HeaderText = "classNo";
+            this.classNoDataGridViewTextBoxColumn.Name = "classNoDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn4
+            // crsHourDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "PERCENTAGE";
-            this.dataGridViewTextBoxColumn4.HeaderText = "PERCENTAGE";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 125;
+            this.crsHourDataGridViewTextBoxColumn.DataPropertyName = "CrsHour";
+            this.crsHourDataGridViewTextBoxColumn.HeaderText = "CrsHour";
+            this.crsHourDataGridViewTextBoxColumn.Name = "crsHourDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn5
+            // sumTDurationInMinutesDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "sumT_DurationInMinutes";
-            this.dataGridViewTextBoxColumn5.HeaderText = "sumT_DurationInMinutes";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 125;
+            this.sumTDurationInMinutesDataGridViewTextBoxColumn.DataPropertyName = "sumT_DurationInMinutes";
+            this.sumTDurationInMinutesDataGridViewTextBoxColumn.HeaderText = "مجموع الدقائق";
+            this.sumTDurationInMinutesDataGridViewTextBoxColumn.Name = "sumTDurationInMinutesDataGridViewTextBoxColumn";
+            this.sumTDurationInMinutesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn6
+            // pERCENTAGEDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "meetingID";
-            this.dataGridViewTextBoxColumn6.HeaderText = "meetingID";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 125;
+            this.pERCENTAGEDataGridViewTextBoxColumn.DataPropertyName = "PERCENTAGE";
+            this.pERCENTAGEDataGridViewTextBoxColumn.HeaderText = "PERCENTAGE";
+            this.pERCENTAGEDataGridViewTextBoxColumn.Name = "pERCENTAGEDataGridViewTextBoxColumn";
+            this.pERCENTAGEDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn7
+            // meetingIDDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "topic";
-            this.dataGridViewTextBoxColumn7.HeaderText = "topic";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 125;
+            this.meetingIDDataGridViewTextBoxColumn.DataPropertyName = "meetingID";
+            this.meetingIDDataGridViewTextBoxColumn.HeaderText = "meetingID";
+            this.meetingIDDataGridViewTextBoxColumn.Name = "meetingIDDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn8
+            // topicDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "email";
-            this.dataGridViewTextBoxColumn8.HeaderText = "email";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 125;
+            this.topicDataGridViewTextBoxColumn.DataPropertyName = "topic";
+            this.topicDataGridViewTextBoxColumn.HeaderText = "topic";
+            this.topicDataGridViewTextBoxColumn.Name = "topicDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn9
+            // emailDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "cologNo";
-            this.dataGridViewTextBoxColumn9.HeaderText = "cologNo";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 125;
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn10
+            // cologNoDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "DeptNo";
-            this.dataGridViewTextBoxColumn10.HeaderText = "DeptNo";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 125;
+            this.cologNoDataGridViewTextBoxColumn.DataPropertyName = "cologNo";
+            this.cologNoDataGridViewTextBoxColumn.HeaderText = "cologNo";
+            this.cologNoDataGridViewTextBoxColumn.Name = "cologNoDataGridViewTextBoxColumn";
+            // 
+            // deptNoDataGridViewTextBoxColumn
+            // 
+            this.deptNoDataGridViewTextBoxColumn.DataPropertyName = "DeptNo";
+            this.deptNoDataGridViewTextBoxColumn.HeaderText = "DeptNo";
+            this.deptNoDataGridViewTextBoxColumn.Name = "deptNoDataGridViewTextBoxColumn";
             // 
             // Pau_user_percent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1343, 450);
+            this.ClientSize = new System.Drawing.Size(1044, 366);
             this.Controls.Add(this.pAU_Final_Percent_ReportDataGridView);
             this.Controls.Add(this.pAU_Final_Percent_ReportBindingNavigator);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Pau_user_percent";
             this.Text = "test";
             this.Load += new System.EventHandler(this.test_Load);
@@ -489,16 +484,6 @@ namespace Zoom_API1
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton pAU_Final_Percent_ReportBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView pAU_Final_Percent_ReportDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker FromTimePicker1;
@@ -508,5 +493,16 @@ namespace Zoom_API1
         private GET_HOSTS_FROM_DB_DATASETTableAdapters.instructorsTableAdapter instructorsTableAdapter;
         private System.Windows.Forms.BindingSource instructorsBindingSource;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn crsNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn classNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn crsHourDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sumTDurationInMinutesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pERCENTAGEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn meetingIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn topicDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cologNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn deptNoDataGridViewTextBoxColumn;
     }
 }
